@@ -1,0 +1,146 @@
+* {
+    border: solid 1px red;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+
+h2, h1, h3,p {
+    font-weight: 400;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+.maincontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.navbar {
+    width: 20%;
+    height: 100%;
+    padding: 15px;
+}
+.document {
+    width: 80%;
+    height: 100%;
+    padding: 15px;
+}
+.navbar .top {
+    height: 10%;
+    padding: 10px;
+}
+.navbar .content {
+    height: 60%;
+    padding: 10px;
+}
+.navbar .bottom {
+    height: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.navbar .todo {
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+.navbar .todo .circle {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .todo .name {
+    width: calc(100% - 30px);
+    height: 30px;
+    margin: 0;
+    padding-left: 10px;
+}
+.navbar .todo .circle .innercircle {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1.5px rgb(87, 87, 87);
+}
+.navbar .todo .circle .innercircle .innerinnercircle {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(87, 87, 87);;
+}
+.document .header {
+    height: 65px;
+}
+.sectiontitle {
+    height: 30px;
+    font-size: 18px;
+}
+.document .controlpanel {
+    height: 40px;
+}
+
+.document .folders {
+    display: flex;
+    height: 155px;
+}
+.document .folders .folder {
+    width: 200px;
+    height: 130px;
+    padding-top: 13px;
+    padding-left: 13px;
+    border: rgb(213, 218, 222) solid 1px;
+    margin-right: 10px;
+    border-radius: 10px;
+    
+}
+
+.document .folders .folder .logo {
+    width: 60px;
+    height: 60px;
+    background-image: url(folder.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.folder .title {
+    font-size: 15px;
+    margin-bottom: 2px;
+    margin-top: 3px
+}
+
+.folder .options {
+    display: flex;
+    justify-content: space-around;
+    height: 15px;
+    width: 70%;
+}
+
+.folder .info {
+    font-size: 13px;
+    width: 70%;
+    padding: 0;
+    margin: 0;
+}
+
+.folder .option {
+    width: 30%;
+    font-size: 10px;
+    border: none;
+    background-color: rgb(239, 83, 83);
+    color: white;
+    outline: none;
+}
