@@ -1,8 +1,10 @@
-import {Toolbox} from "./classes/tools"
+import TodoSystem from "/classes/systems/todoSystem.js"
+const myTodoSystem = new TodoSystem()
 
-let toolbox1 = new Toolbox("toolbox1")
-toolbox1.addSetting("pSats", (a,b) => {
-  return Math.sqrt((a*a)+(b*b))
-})
+myTodoSystem.todoAdded = (todo) => {
+  //
+}
+myTodoSystem.todoFinished = (todo) => {
+  //
+}
 
-console.log(toolbox1.tools.pSats(4,3))
